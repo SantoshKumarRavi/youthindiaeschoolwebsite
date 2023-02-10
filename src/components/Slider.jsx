@@ -15,7 +15,7 @@ const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-5`;
 const PrimaryButtonBase = tw.button`px-8 py-3 font-bold rounded bg-orange-1000 border-0 border-orange-1000 text-gray-100 hocus:bg-orange-700 hocus:text-gray-200  transition duration-300`;
 const Subheading = tw.h5`font-bold text-gray-500  ml-12 sm:ml-8 lg:ml-32 lg:pl-5`
 
-const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
+// const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Heading = tw(SectionHeading)`lg:pl-5 lg:ml-32 ml-12 `;
 const FlexRight=tw.div`mt-2  w-full`;
 const Controls = tw.div`flex items-center lg:mx-16 `;
@@ -38,7 +38,7 @@ const CardSlider = styled(Slider)`
   }
 `;
 // const Card = tw.div`h-full flex! flex-col md:ml-24 sm:border max-w-sm  rounded-2xl relative focus:outline-none`;
-const Card = tw.div`h-full flex !w-72 h-96  border-solid border-gray-600 rounded-lg shadow-2xl p-8 flex-col sm:border max-w-sm  relative focus:outline-none`;
+const Card = tw.div`h-full flex sm:!w-72 xs:!w-56 h-96  border-solid border-gray-600 rounded-lg shadow-2xl p-8 flex-col sm:border max-w-sm  relative focus:outline-none`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full  xs:h-40  bg-cover bg-center rounded-md rounded-xl	`
@@ -48,8 +48,8 @@ const TextInfo = tw.div`pt-6 sm:pt-6`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
 const Title = tw.h5`text-2xl font-bold`;
 const Description = tw.p`text-sm  md:my-0 md:mb-2 sm:mt-4`;
-const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none  py-1 sm:py-2`;
-export default () => {
+const PrimaryButton = tw(PrimaryButtonBase)`mt-auto xs:px-2 sm:text-lg rounded-none w-full rounded sm:rounded-none  py-1 sm:py-2`;
+const CourseSlider= () => {
   const [sliderRef, setSliderRef] = useState(null);
   const sliderSettings = {
     arrows: false,
@@ -128,3 +128,4 @@ export default () => {
     </Container>
   );
 };
+export default CourseSlider
