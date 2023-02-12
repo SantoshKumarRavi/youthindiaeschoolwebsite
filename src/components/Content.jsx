@@ -1,6 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
+// import { css } from "styled-components/macro"; //eslint-disable-line
 export const ContainerBase = tw.div`relative  mx-6`;
 export const ContentWithPaddingXl= tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 export const ContentWithPaddingLg= tw.div`max-w-screen-lg mx-auto py-20 lg:py-24`;
@@ -44,7 +44,7 @@ export default ({
                   </PrimaryButton>
               </TextColumn>
               <IllustrationColumn>
-                <Image src={imageSrc || "assests/subhero.png"} />
+                <Image src={imageSrc || "assests/subhero.avif"} />
               </IllustrationColumn>
             </Row>
           </ContentWithVerticalPadding>

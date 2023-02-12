@@ -3,19 +3,13 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 import { ReactComponent as TwitterIcon } from "../images/twitter-icon.svg";
-import { ReactComponent as FaceBookIcon } from "../images/facebook-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../images/youtube-icon.svg";
 import { ReactComponent as LinkedInIcon } from "../images/linkedIn-icon.svg";
-import { ReactComponent as InstagramIcon } from "../images/instagram-icon.svg";
 import { ReactComponent as InstagramWhiteIcon } from "../images/instagramWhite.svg";
 
 
 
  const ContainerBase = tw.div`relative`;
- const ContentWithPaddingXl= tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
- const ContentWithPaddingLg= tw.div`max-w-screen-lg mx-auto py-20 lg:py-24`;
- const ContentWithVerticalPadding = tw.div`py-20 lg:py-24`;
- const Content2Xl= tw.div`max-w-screen-2xl mx-auto`;
 
 
 const Container = tw(ContainerBase)`bg-blue-1000 text-gray-100`
@@ -46,7 +40,7 @@ const SocialLink = styled.a`
 `;
 
 const CopyrightText = tw.p`text-center mt-16 font-medium tracking-wide text-sm text-gray-600`
-export default () => {
+const Footer= () => {
   return (
     <Container>
       <Content>
@@ -54,7 +48,7 @@ export default () => {
           <LogoContainer>
             <ImgContainer>
             <a href="/#home"> 
-            <LogoImg src={"/assests/heroBG_Blue.png"}/>
+            <LogoImg src={"/assests/heroBG_Blue.avif"}/>
             </a>
             <LogoText>YI E-SCHOOL</LogoText>
             </ImgContainer>
@@ -104,3 +98,4 @@ export default () => {
     </Container>
   );
 };
+export default Footer

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro";
+// import { css } from "styled-components/macro";
 const Container = tw.div`relative mx-6`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex  mx-auto flex-col bg-blue-1000 items-center md:flex-row flex-wrap justify-center max-w-screen-lg `}
 `;
-const VerticalSpacer = tw.div`mt-0 w-full`
+// const VerticalSpacer = tw.div`mt-0 w-full`
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/4 max-w-sm `}
@@ -36,20 +36,20 @@ const Card = styled.div`
 
 const HighlightedText = tw.span`mt-2 sm:mt-4  text-white font-medium	`;
 
-export default () => {
+const HighLights= () => {
   const defaultCards = [
     {
-      imageSrc: "/assests/book.png",
+      imageSrc: "/assests/book.avif",
       highlight:"768+",
       title: "Courses Published",
     },
-    { imageSrc: "/assests/degree.png",
+    { imageSrc: "/assests/degree.avif",
     highlight:"8,300+",
     title: "Happy Learners"     },
-    { imageSrc: "/assests/tieHuman.png", 
+    { imageSrc: "/assests/tieHuman.avif", 
     highlight:"120",
     title: "Expert Instructors"    },
-    { imageSrc: "/assests/awardcup.png", 
+    { imageSrc: "/assests/awardcup.avif", 
     highlight:"32",
     title: "Awards Acheived"    }
   ];
@@ -74,3 +74,5 @@ export default () => {
     </Container>
   );
 };
+
+export default HighLights

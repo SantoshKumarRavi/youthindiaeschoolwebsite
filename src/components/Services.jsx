@@ -46,7 +46,7 @@ export default () => {
             <FlexLeft>
               <FlexContent>
               <IllustrationColumn>
-                <IllustrationImage src={"" || "assests/subheroHelp.png"} />
+                <IllustrationImage src={"" || "assests/subheroHelp.avif"} />
               </IllustrationColumn>
               </FlexContent>
             </FlexLeft>

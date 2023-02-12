@@ -7,7 +7,7 @@ export const ContentWithPaddingXl= tw.div`max-w-screen-xl mx-auto flex lg:flex-r
 const ThreeColumnContainer = styled.div`
   ${tw`mt-0 flex sm:flex-col md:flex-col xs:flex-col items-center items-stretch  lg:flex-row lg:flex-nowrap flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
 `;
-const ColumnWrapper =tw.a`border  border-black p-8 ` 
+// const ColumnWrapper =tw.a`border  border-black p-8 ` 
 const Column =tw.div`lg:w-1/4 
 lg:border lg:border-black
  md:border md:border-black
@@ -37,31 +37,31 @@ const cards = [
       url: "https://timerse.com"
     },
     {
-      imageSrc: "/assests/youtubeF.PNG",
+      imageSrc: "/assests/youtubeF.avif",
       title: "Brief video lectures",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://google.com"
     },
     {
-      imageSrc: "/assests/badge.png",
+      imageSrc: "/assests/badge.avif",
       title: "Quizzes & Leaderboard",
       description: "Lorem ipsum donor amet siti ceali placeholder text",
       url: "https://reddit.com"
     },
     {
-        imageSrc: "/assests/assignment.png",
+        imageSrc: "/assests/assignment.avif",
         title: "Assignment submission and evaluation",
         description: "Lorem ipsum donor amet siti ceali placeholder text",
         url: "https://reddit.com"
       },
       {
-        imageSrc: "/assests/discussion.png",
+        imageSrc: "/assests/discussion.avif",
         title: "Discussion Forums",
         description: "Lorem ipsum donor amet siti ceali placeholder text",
         url: "https://google.com"
       }
   ]
-export default () => {
+const Features= () => {
   return (
     <>
     <Container>
@@ -85,3 +85,4 @@ export default () => {
     </>
   );
 };
+export default Features

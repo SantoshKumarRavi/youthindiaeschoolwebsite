@@ -104,7 +104,7 @@ const TopNav= ({ roundedHeaderButton = false, logoLink, links, className, collap
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img src={"/assests/hero.png"} alt="YIE logo" />
+      <img src={"/assests/hero.avif"} alt="YIE logo" />
       YI E-SCHOOL
     </LogoLink>
   );

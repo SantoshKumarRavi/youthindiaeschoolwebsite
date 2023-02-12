@@ -73,25 +73,25 @@ const CourseSlider= () => {
 
   const cards = [
     {
-      imageSrc: "/assests/calculater.PNG",
+      imageSrc: "/assests/calculater.avif",
       title: "Mathematics",
       highlight:"73,000+",
       description: `active learners are currently learning this course.`,
     },
     {
-      imageSrc: "/assests/movingBell.PNG",
+      imageSrc: "/assests/movingBell.avif",
       title: "Science",
       highlight:"29,000+",
       description: "Learners are currently learning this course.",
     },
     {
-      imageSrc: "/assests/worldmap.PNG",
+      imageSrc: "/assests/worldmap.avif",
       title: "History",
       highlight:"14,000+",
       description: "Learners are currently learning this course.",
     },
     {
-      imageSrc: "/assests/movingBell.PNG",
+      imageSrc: "/assests/movingBell.avif",
       title: "Science",
       highlight:"29,000+",
       description: "Learners are currently learning this course.",

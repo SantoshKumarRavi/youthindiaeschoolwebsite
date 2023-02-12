@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+// import { css } from "styled-components/macro"; //eslint-disable-line
 const SectionHeading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`
 const SubheadingBase = tw.h5`font-bold text-gray-300`
 const Container = tw.div`relative bg-blue-1000`;
