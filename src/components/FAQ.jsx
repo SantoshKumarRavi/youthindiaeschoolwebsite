@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React ,{useState} from "react";
+import {motion} from "framer-motion";
 import tw from "twin.macro";
-import styled, { css } from "styled-components/macro"; //eslint-disable-line
+import styled,{ css } from "styled-components/macro"; //eslint-disable-line , 
 // import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 // import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 // import { SectionDescription } from "components/misc/Typography.js";
@@ -35,7 +35,7 @@ const QuestionToggleIcon = styled(motion.span)`
 `;
 const Answer = tw(motion.div)`hidden text-justify	 px-8 text-sm font-normal mt-4 text-gray-600`;
 
-export default ({
+ const FAQ= ({
   subheading = "",
   heading = "Frequently Asked Questions",
   description="",
@@ -133,3 +133,5 @@ export default ({
     </PrimaryBackgroundContainer>
   );
 };
+
+export default FAQ

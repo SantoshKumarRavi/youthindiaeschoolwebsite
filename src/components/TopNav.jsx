@@ -21,7 +21,7 @@ export const NavLink = tw.a`
   no-underline	
   text-black
   font-semibold tracking-wide transition duration-300
-  border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+  border-b-2 border-transparent hover:border-primary-500 hocus:text-orange-1000
 `;
 
 export const PrimaryLink = tw(NavLink)`
@@ -31,14 +31,14 @@ export const PrimaryLink = tw(NavLink)`
 `;
 export const PrimaryOutlineLink = tw(NavLink)`
   px-8 py-3  rounded text-gray-800
-  hocus:bg-gray-500 hocus:text-gray-100 focus:shadow-outline
-  outline outline-2  outline-gray-800
+  hocus:bg-orange-1000 hocus:text-gray-100 focus:shadow-outline
+  outline outline-2  outline-gray-800 hocus:outline-orange-1000
   `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center  border-b-0 text-black xs:text-xl sm:text-2xl! ml-0!`};
+  ${tw`flex items-center  border-b-0 hover:font-bold text-black xs:text-xl sm:text-2xl! ml-0!`};
   img {
-    ${tw`w-20 mr-3`}
+    ${tw`md:w-20 mr-3 xs:w-12`}
   }
 `;
 
@@ -84,21 +84,38 @@ const TopNav= ({ roundedHeaderButton = false, logoLink, links, className, collap
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
   const defaultLinks = [
     <NavLinks key={1}>
-      <MobNavToggle onClick={toggleNavbar} ><NavLink   href="/#home">Home</NavLink></MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar} >      <NavLink href="/#about">About</NavLink>
-</MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar} >      <NavLink href="/#services">Services</NavLink>
-</MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar} >      <NavLink href="/#courses">Courses</NavLink>
-</MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar} >      <NavLink href="/#">Pricing</NavLink>
-</MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar} >      <NavLink href="/#">Free Content</NavLink>
-</MobNavToggle>
-
-      <PrimaryOutlineLink css={roundedHeaderButton && tw`rounded-lg lg:ml-12!`}href="/#">Login</PrimaryOutlineLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-lg lg:ml-6!`}href="/#">Sign Up</PrimaryLink>
-    </NavLinks>
+      <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#home">Home</NavLink>
+      </MobNavToggle>
+      <MobNavToggle onClick={toggleNavbar}>
+        
+        <NavLink href="/#about">About</NavLink>
+      </MobNavToggle>
+      <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#services">Services</NavLink>
+      </MobNavToggle>
+      <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#courses">Courses</NavLink>
+      </MobNavToggle>
+      <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#">Pricing</NavLink>
+      </MobNavToggle>
+      <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#">Free Content</NavLink>
+      </MobNavToggle>
+      <PrimaryOutlineLink
+        css={roundedHeaderButton && tw`rounded-lg lg:ml-12!`}
+        href="/#"
+      >
+        Login
+      </PrimaryOutlineLink>
+      <PrimaryLink
+        css={roundedHeaderButton && tw`rounded-lg lg:ml-6!`}
+        href="/#"
+      >
+        Sign Up
+      </PrimaryLink>
+    </NavLinks>,
   ];
  
 

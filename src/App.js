@@ -1,8 +1,10 @@
 import "./App.css";
 // import GlobalStyles from 'styles/GlobalStyles';
-import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import { createMuiTheme, MuiThemeProvider,withStyles } from "@material-ui/core/styles";
+// import tw from "twin.macro";
+// import {css}  from "styled-components/macro"; //eslint-disable-line
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+
+
 
 import TopNav from "./components/TopNav";
 import Content from "./components/Content";

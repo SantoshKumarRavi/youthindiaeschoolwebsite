@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro";
+// import { css } from "styled-components/macro";
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
@@ -36,7 +36,7 @@ const Card = styled.div`
 `;
 
 
-export default () => {
+ const ServiceFeature= () => {
   const defaultCards = [
     {
       imageSrc: "",
@@ -72,3 +72,4 @@ export default () => {
     </Container>
   );
 };
+export default ServiceFeature

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
+// import { css } from "styled-components/macro"; //eslint-disable-line
 export const Container = tw.div`relative  mx-6`;
 export const ContentWithPaddingXl= tw.div`max-w-screen-xl mx-auto flex lg:flex-row lg:justify-center lg:items-center py-10  lg:py-4 `;
 const ThreeColumnContainer = styled.div`

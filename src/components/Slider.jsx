@@ -38,7 +38,7 @@ const CardSlider = styled(Slider)`
   }
 `;
 // const Card = tw.div`h-full flex! flex-col md:ml-24 sm:border max-w-sm  rounded-2xl relative focus:outline-none`;
-const Card = tw.div`h-full flex sm:!w-72 xs:!w-56 h-96  border-solid border-gray-600 rounded-lg shadow-2xl p-8 flex-col sm:border max-w-sm  relative focus:outline-none`;
+const Card = tw.div`h-full flex sm:!w-72 xs:!w-56 h-96  border-solid border-gray-600 rounded-lg shadow-2xl p-8 mx-16 flex-col sm:border max-w-sm  relative focus:outline-none`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full  xs:h-40  bg-cover bg-center rounded-md rounded-xl	`

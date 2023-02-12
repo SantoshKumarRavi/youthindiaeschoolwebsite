@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
+// import { css } from "styled-components/macro"; //eslint-disable-line
 import ServiceFeature from "../components/ServiceFeature";
 
 // import { ContentWithPaddingXl } from "components/misc/Layouts.js";
@@ -19,13 +19,13 @@ const FlexLeft=tw.div`mt-2 w-full lg:w-1/3  flex flex-col justify-start items-ce
 const FlexRight=tw.div`mt-2  w-full lg:w-2/3 `;
 const FlexContent = tw.div`px-4 text-center flex flex-col items-center `;
 // const TopFlexRight = tw(FlexRight)`justify-items-center items-center`;
-const Image = tw.img`w-20 h-20 rounded-full`;
-const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
-const CustomerName = tw.p`mt-5 text-gray-900 font-semibold uppercase text-sm tracking-wide`;
+// const Image = tw.img`w-20 h-20 rounded-full`;
+// const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
+// const CustomerName = tw.p`mt-5 text-gray-900 font-semibold uppercase text-sm tracking-wide`;
 const Column = tw.div`lg:w-1/2`;
 const IllustrationColumn = tw(Column)`mt-16 lg:mt-0 lg:ml-16 w-full`;
 const IllustrationImage = tw.img`w-full	 ml-auto`
-export default () => {
+const Services= () => {
   return (
     <>
      <Container id="services">
@@ -61,3 +61,4 @@ export default () => {
     </>
   );
 };
+export default Services

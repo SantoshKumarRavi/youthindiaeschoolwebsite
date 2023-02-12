@@ -69,7 +69,7 @@ const Footer= () => {
           </LogoContainer>
           <LinksContainer>
             <AddressName >CM-1, VSS Nagar, Bhubaneswar,<BreakTag/> Odisha 751007</AddressName>
-            <AddressName >eschool@youthindiafoundation.com</AddressName>
+            <AddressName >info@youthindiaeschool.com</AddressName>
             <TopAddressName>Mr.Subhankar Nanda</TopAddressName>
             <AddressName >91786-27783</AddressName>
             <TopAddressName>Mr.Paras Kalura</TopAddressName>
