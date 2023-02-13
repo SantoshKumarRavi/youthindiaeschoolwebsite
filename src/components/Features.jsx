@@ -28,43 +28,42 @@ const Card = styled.div`
     ${tw` font-bold text-lg  leading-none no-underline	`}
   }
 `;
+/*
+- Change features/benefits to: 
+Administrative Management System,
+ Communication Management System, 
+ Learning Managements System,
+  Assessment Management System,
+   Reports & Analytics
 
+
+*/
 const cards = [
     {
-      imageSrc: "/assests/DegreeCap.png",
-      title: "Active learning approach",
-      description: "We strictly only deal with vendors that provide top notch security.",
-      url: "https://timerse.com"
+      imageSrc: "/assests/tieHumanB3.avif",
+      title: "Administrative Management System"
     },
     {
-      imageSrc: "/assests/youtubeF.avif",
-      title: "Brief video lectures",
-      description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://google.com"
+      imageSrc: "/assests/discussion.avif",////assests/badge.avif 
+      title: "Communication Management System"
     },
     {
-      imageSrc: "/assests/badge.avif",
-      title: "Quizzes & Leaderboard",
-      description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://reddit.com"
-    },
-    {
-        imageSrc: "/assests/assignment.avif",
-        title: "Assignment submission and evaluation",
-        description: "Lorem ipsum donor amet siti ceali placeholder text",
-        url: "https://reddit.com"
+        imageSrc: "/assests/youtubeF.avif",
+        title: "Learning Managements System"
       },
       {
-        imageSrc: "/assests/discussion.avif",
-        title: "Discussion Forums",
-        description: "Lorem ipsum donor amet siti ceali placeholder text",
-        url: "https://google.com"
-      }
+        imageSrc: "/assests/assignment.avif",
+        title: "Assessment Management System"
+      },
+      {
+        imageSrc: "/assests/reports2.avif",
+        title: "Reports & Analytics",
+      },
   ]
 const Features= () => {
   return (
     <>
-    <Container>
+    <Container id="features">
     <Heading>Features</Heading>
       <ContentWithPaddingXl>
         <ThreeColumnContainer>

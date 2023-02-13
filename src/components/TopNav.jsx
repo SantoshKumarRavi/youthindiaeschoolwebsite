@@ -94,15 +94,15 @@ const TopNav= ({ roundedHeaderButton = false, logoLink, links, className, collap
       <MobNavToggle onClick={toggleNavbar}>
         <NavLink href="/#services">Services</NavLink>
       </MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar}>
+      {/* <MobNavToggle onClick={toggleNavbar}>
         <NavLink href="/#courses">Courses</NavLink>
-      </MobNavToggle>
+      </MobNavToggle> */}
       <MobNavToggle onClick={toggleNavbar}>
-        <NavLink href="/#">Pricing</NavLink>
+        <NavLink href="/#features">Features</NavLink>
       </MobNavToggle>
-      <MobNavToggle onClick={toggleNavbar}>
-        <NavLink href="/#">Free Content</NavLink>
-      </MobNavToggle>
+      {/* <MobNavToggle onClick={toggleNavbar}>
+        <NavLink href="/#">HighLights</NavLink>
+      </MobNavToggle> */}
       <PrimaryOutlineLink
         css={roundedHeaderButton && tw`rounded-lg lg:ml-12!`}
         href="/#"

@@ -39,10 +39,10 @@ function App() {
         <AboutUs/>
         <Services/>
         <Features/>
-        <Slider/>
+        {/* <Slider/> */}
         <HighLights/>
         <Testimonials/>
-        <FAQ/>
+        {/* <FAQ/> */}
         <StayUpdated/>
         <Subscription/>
         <Footer/>

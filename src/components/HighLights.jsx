@@ -5,7 +5,7 @@ import tw from "twin.macro";
 const Container = tw.div`relative mx-6`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex  mx-auto flex-col bg-blue-1000 items-center md:flex-row flex-wrap justify-center max-w-screen-lg `}
+  ${tw`flex  mx-auto flex-col rounded-xl bg-blue-1000 items-center md:flex-row flex-wrap justify-center max-w-screen-lg `}
 `;
 // const VerticalSpacer = tw.div`mt-0 w-full`
 
@@ -26,7 +26,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-1 tracking-wide text-white font-bold text-xl leading-none`}
+    ${tw`mt-1  text-white font-bold text-xl leading-none`}
   }
 
   .description {
@@ -35,23 +35,24 @@ const Card = styled.div`
 `;
 
 const HighlightedText = tw.span`mt-2 sm:mt-4  text-white font-medium	`;
-
+/*
+- Instead of courses published part: 50 schools, 16,000+ users, Multiple Partnerships, Expert Masterclasses, etc
+*/
 const HighLights= () => {
   const defaultCards = [
     {
-      imageSrc: "/assests/book.avif",
-      highlight:"768+",
-      title: "Courses Published",
+      imageSrc: "/assests/usermulti.avif",
+      highlight:"16,000+",
+      title: "Users",
     },
-    { imageSrc: "/assests/degree.avif",
-    highlight:"8,300+",
-    title: "Happy Learners"     },
+    { imageSrc: "/assests/school.avif",
+    highlight:"50",
+    title: "schools"     },
     { imageSrc: "/assests/tieHuman.avif", 
-    highlight:"120",
-    title: "Expert Instructors"    },
-    { imageSrc: "/assests/awardcup.avif", 
-    highlight:"32",
-    title: "Awards Acheived"    }
+    title: "Expert Masterclasses"    },
+    { imageSrc: "/assests/resizedpartner2.avif", 
+    title: "Multiple Partnerships"    
+    }
   ];
 
 

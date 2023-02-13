@@ -26,7 +26,7 @@ const TwoContainer = tw.div`font-medium flex flex-row px-8`
 const LinksContainer = tw.div`mt-8 font-medium flex flex-col flex-wrap justify-center lg:items-start items-center`
 const Link = tw.a`text-left text-gray-600	 border-b-2  border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4 no-underline`;
 const AddressName=tw.p`lg:text-left text-center text-gray-600 font-medium	 xs:mx-1 xs:px-16 xs:text-sm  border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 my-2 mx-4 no-underline`;
-const TopAddressName=tw.p`lg:text-left text-center text-gray-600 font-medium	 xs:mx-1 xs:px-16 xs:text-sm  border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-0 transition duration-300 my-0 mx-4 no-underline`;
+// const TopAddressName=tw.p`lg:text-left text-center text-gray-600 font-medium	 xs:mx-1 xs:px-16 xs:text-sm  border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-0 transition duration-300 my-0 mx-4 no-underline`;
 const HeadingLink = tw.a`border-b-2 text-gray-200 border-transparent pb-1  hocus:text-gray-200 transition duration-300 mt-2 mx-4 no-underline`;
 
 const BreakTag = tw.br`lg:block hidden`;
@@ -70,23 +70,23 @@ const Footer= () => {
           <LinksContainer>
             <AddressName >CM-1, VSS Nagar, Bhubaneswar,<BreakTag/> Odisha 751007</AddressName>
             <AddressName >info@youthindiaeschool.com</AddressName>
-            <TopAddressName>Mr.Subhankar Nanda</TopAddressName>
+            {/* <TopAddressName>Mr.Subhankar Nanda</TopAddressName>
             <AddressName >91786-27783</AddressName>
             <TopAddressName>Mr.Paras Kalura</TopAddressName>
-            <AddressName >98929-93203</AddressName>
+            <AddressName >98929-93203</AddressName> */}
           </LinksContainer>
           <TwoContainer>
           <LinksContainer>
-            <HeadingLink>Community</HeadingLink>
-            <Link href="#">Learners</Link>
-            <Link href="#">Partners</Link>
-            <Link href="#">Blog</Link>
+            <HeadingLink>Links</HeadingLink>
+            <Link href="#">Home</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#">&nbsp;</Link>
           </LinksContainer>
           <LinksContainer>
-            <HeadingLink>Information</HeadingLink>
-            <Link href="#">About</Link>
-            <Link href="#">Pricing</Link>
-            <Link href="#">Contact</Link>
+            <HeadingLink>Info</HeadingLink>
+            <Link href="#about">About</Link>
+            <Link href="#features">Features</Link>
+            <Link href="#">&nbsp;</Link>
           </LinksContainer>
           </TwoContainer>
          
